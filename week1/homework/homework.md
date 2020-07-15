@@ -8,4 +8,4 @@
 
 2. (medium - optional): Proiect nou
    - faceti un folder nou, in care creati un fisier index.html
-   - va rg sa implementati folosind html/css design din poza extra-work.png
+   - va rog sa implementati folosind html/css design din poza extra-work.png
