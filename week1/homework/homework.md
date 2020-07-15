@@ -1,6 +1,6 @@
 # Cerinte:
 
-1. (easy - obligatoriu): Refaceti ce sa facut la curs
+1. (easy - obligatoriu): Refaceti ce sa facut la curs cu datele vostre
    - Sa va jucati cu css inline (atributul style de pe un element html)
    - Sa mutati css inline in fisierul style.css
 
