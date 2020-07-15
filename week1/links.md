@@ -1,0 +1,1 @@
+1. Imperative vs Declarative - https://www.youtube.com/watch?v=4A2mWqLUpzw
