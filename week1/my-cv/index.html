@@ -8,17 +8,27 @@
 
 <body>
   <h1>My CV</h1>
+  <a href="./about.html">Go to about.html</a>
+  <a href="#ex">Go to Experienta</a>
+  <a href="#contact">Go to Contact</a>
   <div id="info">
     <img src="./panda.jpg" style="width: 150px; height: 100px;">
     <ul style="display: inline-block;">
-      <li>Nume: <span style="color: red;">Timis Razvan</span></li>
+      <li>Nume: <span style="color: red;">
+          <u>
+            <b>Timis Razvan</b>
+          </u>
+        </span>
+      </li>
       <li>Telefon: 0746339070</li>
-      <li>Email: r@timis.dev</li>
-      <li>Github: github.com/razvantimis</li>
+      <li>Email: <a href="mailto:r@timis.dev">r@timis.dev</a></li>
+      <li>Github: <a href="https://github.com/razvantimis/cluj-frontend-16" target="_blank">github.com/razvantimis</a>
+      </li>
     </ul>
     <p>About me</p>
   </div>
-  <div>
+
+  <div id="ex">
     <h2>Experienta profesionala</h2>
     <table>
       <tr>
@@ -38,6 +48,17 @@
       </tr>
     </table>
   </div>
+  <div id="contact">
+    <h2>Contact me</h2>
+    <form>
+      Titlu: <input name="titlu">
+      Mesaje: <textarea></textarea>
+      <input type="submit" value="Submit!">
+      <input type="reset" value="Reset">
+    </form>
+  </div>
+  <iframe name="iframeGoogle" width="600" height="400" src="http://timis.dev" frameborder="yes" scrolling="yes">
+  </iframe>
 </body>
 
 </html>
