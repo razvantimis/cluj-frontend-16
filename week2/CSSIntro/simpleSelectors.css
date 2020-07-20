@@ -1,0 +1,79 @@
+/* div {
+    background-color: grey;
+} */
+
+#container {
+    background-color: grey;
+    color: blue;
+}
+
+.some-element {
+    background-color: red;
+}
+
+.red, .some-element, #container {
+    color: red;
+    font-weight: bold;
+}
+
+span {
+    color: blue;
+}
+
+a {
+    color: green;
+    text-decoration: none;
+}
+
+#container div {
+    background-color: turquoise;
+}
+
+
+#container>div {
+    background-color: greenyellow;
+}
+
+
+* {
+    color: yellow;
+}
+
+
+.some-element+div{
+    background-color: pink;
+}
+
+[type] {
+    font-size: 20px;
+}
+
+[type="password"] {
+    font-size: 30px;
+    color: blue;
+}
+
+
+[class~="error-message"] {
+    font-size: 30px;
+    color: pink;
+}
+
+[class|="error"] {
+    font-size: 15px;
+    color: green;
+}
+
+[class^="error"] {
+    font-size: 3px;
+    color: purple;
+}
+
+[class$="message"] {
+    text-decoration: underline;
+}
+
+
+[class*="or-mes"] {
+    font-weight: bolder;
+}
