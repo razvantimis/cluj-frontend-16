@@ -25,6 +25,14 @@ a {
     text-decoration: none;
 }
 
+
+a:active {
+    color: pink;
+}
+a:hover {
+    color: red;
+}
+
 #container div {
     background-color: turquoise;
 }
@@ -32,21 +40,29 @@ a {
 
 #container>div {
     background-color: greenyellow;
-}
+    border: 3px dotted pink;
 
+}
+#container div:not(.some-element) {
+    background-color: red;
+
+    border: 3px dotted green;
+}
 
 /* * {
     color: yellow;
 } */
+
+
+.some-element~input{ 
+    border: 5px solid red; 
+}
 
 .some-element+input{
     background-color: pink;
     border: 5px solid blue; 
 }
 
-.some-element~input{ 
-    border: 5px solid red; 
-}
 
 [type] {
     font-size: 20px;
@@ -80,4 +96,22 @@ a {
 
 [class*="or-mes"] {
     font-weight: bolder;
+}
+
+table tr:first-child td:first-child {
+    background-color: salmon;
+}
+
+[type="checkbox"]:checked {
+    border: 3px solid red;
+}
+
+
+
+
+#container:after {
+    display: block;
+    content: "something";
+    width: 20px;
+    height: 20px;
 }
