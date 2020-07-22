@@ -1,0 +1,39 @@
+@font-face {
+  font-family: "Pacifico";
+  src: url("Pacifico.ttf");
+}
+
+* {
+  font-family: Pacifico;
+  font-size: 18px;
+  letter-spacing: 10px;
+  line-height: 50px;
+  padding: 0;
+  margin: 0;
+}
+
+.sheep {
+  background-image: url("/assets/sheep.jpg");
+  background-position: top;
+  width: 500px;
+  height: 200px;
+}
+
+.blue {
+  background-color: blue;
+  width: 40px;
+  height: 50px;
+  color: white;
+}
+
+.yellow {
+  background-color: yellow;
+  width: 80px;
+  height: 30px;
+}
+
+.red {
+  background-color: red;
+  width: 10px;
+  height: 10px;
+}
