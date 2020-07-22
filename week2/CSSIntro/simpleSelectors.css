@@ -33,19 +33,21 @@ a:hover {
     color: red;
 }
 
+/* specificity: 0101 */
 #container div {
     background-color: turquoise;
 }
 
-
+/* specificity: 0101 */
 #container>div {
     background-color: greenyellow;
     border: 3px dotted pink;
 
 }
+
+/* specificity: 0111 */
 #container div:not(.some-element) {
     background-color: red;
-
     border: 3px dotted green;
 }
 
