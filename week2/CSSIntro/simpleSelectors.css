@@ -35,15 +35,14 @@ a {
 }
 
 
-* {
+/* * {
     color: yellow;
-}
-
+} */
 
 .some-element+input{
     background-color: pink;
+    border: 5px solid blue; 
 }
-
 
 .some-element~input{ 
     border: 5px solid red; 
