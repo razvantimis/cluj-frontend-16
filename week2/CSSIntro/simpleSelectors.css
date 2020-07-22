@@ -117,3 +117,27 @@ table tr:first-child td:first-child {
     width: 20px;
     height: 20px;
 }
+
+
+
+@font-face {
+    font-family: Crina;
+    src: url("Crina.wof");
+}
+
+#container>div {
+    font-family: Crina;
+}
+
+
+* {
+    font-family: Crina, Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Crina, Arial, Helvetica, sans-serif;
+}
