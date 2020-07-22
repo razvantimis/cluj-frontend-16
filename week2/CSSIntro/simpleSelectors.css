@@ -40,8 +40,13 @@ a {
 }
 
 
-.some-element+div{
+.some-element+input{
     background-color: pink;
+}
+
+
+.some-element~input{ 
+    border: 5px solid red; 
 }
 
 [type] {
