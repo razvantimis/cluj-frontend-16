@@ -5,11 +5,12 @@
 
 * {
   font-family: Pacifico;
-  font-size: 18px;
-  letter-spacing: 10px;
-  line-height: 50px;
+  font-size: 12px;
+  letter-spacing: 1px;
+  line-height: 20px;
   padding: 0;
   margin: 0;
+  color: black;
 }
 
 .sheep {
@@ -26,6 +27,13 @@
   color: white;
 }
 
+.purple {
+  width: 20px;
+  height: 10px;
+  background-color: purple;
+  display: inline-block;
+}
+
 .yellow {
   background-color: yellow;
   width: 80px;
@@ -36,4 +44,16 @@
   background-color: red;
   width: 10px;
   height: 10px;
+  display: inline-block;
+
+
+
+  /*
+    overflow-wrap: anywhere;
+    overflow-wrap: break-word;
+
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+  */
 }
