@@ -1,0 +1,55 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 1px dotted grey;
+}
+
+header {
+    height: 40px;
+    min-width: 900px;
+}
+
+.left-section {
+
+}
+
+.left-section .logo {
+    width: 200px;
+}
+
+.left-section nav {
+
+}
+
+.left-section nav a {
+
+}
+
+.phone {
+    width: 200px;
+    text-align: right;
+}
+
+section {
+
+}
+
+article {
+    width: 300px;
+    text-align: center;
+    border: 1px solid blue;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+svg {
+    width: 50px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 20px;
+    line-height: 25px;
+    margin-bottom: 20px;
+}
