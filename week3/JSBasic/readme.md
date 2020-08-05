@@ -1,6 +1,3 @@
-
-
-
 Probleme:
 1. Sa se faca suma a doua numere
 2. Se dau doua numere, sa se determine maximul intre ele
