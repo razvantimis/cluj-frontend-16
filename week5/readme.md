@@ -7,8 +7,7 @@ Monday:
 * Functions and Scopes
   * Paramater by ref / by value
   * Scope
-  * Hosting
-  * var vs let/const
+  * Hosting ( var vs let/const )
   * Closure
 
 Wednesday:
