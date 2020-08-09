@@ -1,3 +1,4 @@
+Monday: 
 * Recap
   * ternary condition
   * string exemple
@@ -7,8 +8,12 @@
   * Paramater by ref / by value
   * Scope
   * Hosting
+  * var vs let/const
   * Closure
+
+Wednesday:
+* Recap
 * DOM Manipulation
   * Finding elements
   * Events
-  * Comment list workshop
+* Comment list workshop
