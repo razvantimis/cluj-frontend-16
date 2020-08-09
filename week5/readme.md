@@ -1,3 +1,7 @@
+* Recap
+  * ternary condition
+  * string exemple
+  * == vs ===
 * JS Workshop BMI
 * Functions and Scopes
   * Paramater by ref / by value

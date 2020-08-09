@@ -1,4 +1,3 @@
 * Recap
-  * ternary condition
 * Quiz
 * 
