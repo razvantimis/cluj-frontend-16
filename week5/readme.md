@@ -5,7 +5,7 @@ Monday:
   * == vs ===
 * JS Workshop BMI
 * Functions and Scopes
-  * Paramater by ref / by value
+  * Paramater by reference / by value
   * Scope
   * Hosting ( var vs let/const )
   * Closure
