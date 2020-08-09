@@ -7,4 +7,4 @@
 * DOM Manipulation
   * Finding elements
   * Events
-  * Comment list 
+  * Comment list workshop
