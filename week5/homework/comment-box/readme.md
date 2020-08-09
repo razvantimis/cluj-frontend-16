@@ -1,6 +1,6 @@
-* Continue working on the comment box widget that we started together on our previous course,
+Continue working on the comment box widget that we started together on our previous course,
 and add the following functionalities to it:
-  * Add Comment
+* Add Comment
 
   * Add event listener on “Add” button
 
