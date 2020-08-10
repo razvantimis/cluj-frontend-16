@@ -19,7 +19,7 @@ function hello(name){
   console.log('hello ' + name + age)
   function test(){
     // avem acces la tot ce este mai sus
-    console.log(age, name)
+    console.log(age, name, isMen)
     var isMen = true;
   }
   test();
@@ -38,7 +38,6 @@ console.log(age);
 
 
 // exemplu 
-
 var a = 10;
 function setNumber(){
   a = 8;
@@ -101,5 +100,10 @@ function setNumber(){// hosting inner function
 
 const a = 5;
 
-
-
+// hosting
+function test(){
+  // avem acces la tot ce este mai sus
+  console.log(age, name, isMen) // isMen = undefined
+  var isMen = true; 
+  console.log(isMen) // true
+}
