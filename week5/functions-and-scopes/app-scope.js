@@ -6,5 +6,101 @@
   5. Closure
   6. Callback
 */
-// 1. What is function? How define a function?
-// isPrim(number) => boolean
+//  3. Scope
+// parameter scope
+function hello(name, age){
+  console.log('hello ' + name + age)
+}
+hello('razvan', 25)
+// console.log(name) - nu merge
+// var scope
+function hello(name){
+  var age = 27;
+  console.log('hello ' + name + age)
+  function test(){
+    // avem acces la tot ce este mai sus
+    console.log(age, name)
+    var isMen = true;
+  }
+  test();
+}
+hello('razvan')
+console.log(age);
+
+
+var age = 27; // variabila globala
+function hello(name){
+  console.log('hello ' + name + age)
+}
+hello('razvan')
+console.log(age);
+
+
+
+// exemplu 
+
+var a = 10;
+function setNumber(){
+  a = 8;
+}
+setNumber();
+console.log(a); // 8
+
+
+var a = 10;
+function setNumber(){
+  var a;
+  a = 8;
+}
+setNumber();
+console.log(a); // 10
+//  4. Hosting ( var vs let/const )
+// variabile care sunt definite cu var si function au hosting
+// 
+
+// var a = 10;
+// console.log(a); // 10
+
+setNumber();
+function setNumber(){// hosting inner function
+  console.log('in function', a)
+  // a = 8;
+  var a;
+}
+
+
+var a = 10;
+setNumber();
+console.log(a); // 10
+
+function setNumber(){ // hosting inner function
+  console.log('in function', a)
+  a = 8;
+  if(true){
+    if(true){
+       var a;
+    }
+  }
+}
+
+// let / const
+var a = 10;
+setNumber();
+console.log(a); // 10
+
+function setNumber(){// hosting inner function
+  console.log('in function', a)
+  if(true){
+    console.log(a) // nu-l putem accesa
+    let a; // are scop doar in bloc
+    // doar aici merge console.log(a)
+  }
+  console.log(a) // nu-l putem accesa
+}
+
+
+const a = 5;
+//  5. Closure
+
+
+
