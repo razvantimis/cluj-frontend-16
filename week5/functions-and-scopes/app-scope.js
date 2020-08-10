@@ -100,7 +100,6 @@ function setNumber(){// hosting inner function
 
 
 const a = 5;
-//  5. Closure
 
 
 
