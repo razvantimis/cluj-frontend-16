@@ -2,7 +2,7 @@
   1. What is function? How define a function?
   2. Paramater by reference / by value
   3. Scope
-  4. Hosting ( var vs let/const )
+  4. Hoisting ( var vs let/const )
   5. Closure
   6. Callback
 */
@@ -53,15 +53,15 @@ function setNumber(){
 }
 setNumber();
 console.log(a); // 10
-//  4. Hosting ( var vs let/const )
-// variabile care sunt definite cu var si function au hosting
+//  4. Hoisting ( var vs let/const )
+// variabile care sunt definite cu var si function au Hoisting
 // 
 
 // var a = 10;
 // console.log(a); // 10
 
 setNumber();
-function setNumber(){// hosting inner function
+function setNumber(){// Hoisting inner function
   console.log('in function', a)
   // a = 8;
   var a;
@@ -72,7 +72,7 @@ var a = 10;
 setNumber();
 console.log(a); // 10
 
-function setNumber(){ // hosting inner function
+function setNumber(){ // Hoisting inner function
   console.log('in function', a)
   a = 8;
   if(true){
@@ -87,7 +87,7 @@ var a = 10;
 setNumber();
 console.log(a); // 10
 
-function setNumber(){// hosting inner function
+function setNumber(){// Hoisting inner function
   console.log('in function', a)
   if(true){
     console.log(a) // nu-l putem accesa
@@ -100,7 +100,7 @@ function setNumber(){// hosting inner function
 
 const a = 5;
 
-// hosting
+// Hoisting
 function test(){
   // avem acces la tot ce este mai sus
   console.log(age, name, isMen) // isMen = undefined
