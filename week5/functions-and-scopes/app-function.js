@@ -2,7 +2,7 @@
   1. What is function? How define a function?
   2. Paramater by reference / by value
   3. Scope
-  4. Hoisting ( var vs let/const )
+  4. Hoisting ( var vs let/const ) https://developer.mozilla.org/en-US/docs/Glossary/Hoisting
   5. Closure
   6. Callback
 */
