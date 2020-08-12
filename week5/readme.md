@@ -8,10 +8,13 @@ Monday:
   * Paramater by reference / by value
   * Scope
   * Hoisting ( var vs let/const )
-  * Closure
+  
 
 Wednesday:
-* Recap
+* Recap 
+* Refactor BMI with function
+* Callback
+* Closure
 * DOM Manipulation
   * Finding elements
   * Events
