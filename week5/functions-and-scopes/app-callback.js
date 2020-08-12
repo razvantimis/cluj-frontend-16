@@ -1,7 +1,6 @@
 // Callback
 
 function start(a, callback){
-
   if(a == 10){
     console.log('a este 10')
   } else {
