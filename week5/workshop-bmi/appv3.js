@@ -3,22 +3,22 @@ var height = 1.71;
 var weight = 85;
 
 var bmi = calcBmi(weight, height);
-showMsgBmi(bmi);
+showMsgBmi(bmi, "Razvan");
 
 function calcBmi(weight, height) {
     return weight / (height * height);
 }
 
-function showMsgBmi(bmi, x) {
+function showMsgBmi(bmi, personName) {
     if (bmi < 18.5) {
-        console.log(x +
+        console.log(personName +
             " your weight is underweight");
     } else if (bmi < 25) {
-        console.log(x + " your weight is normal");
+        console.log(personName + " your weight is normal");
     } else if (bmi < 30) {
-        console.log(x + " your weight is overweight");
+        console.log(personName + " your weight is overweight");
     } else {
-        console.log(x + " your weight is obese");
+        console.log(personName + " your weight is obese");
     }
 }
 
@@ -47,5 +47,5 @@ for (var i = 0; i < list.length; i++) {
 
     var bmi = calcBmi(person.weight, person.height);
 
-    showMsgBmi(bmi, person.name);
+    showMsgBmi(bmi, person.name); // i = 0 => showMsgBmi(??,"Paul")
 }
