@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Book List</title>
+    <link rel="stylesheet" type="text/css" href="book.css">
+</head>
+
+<body>
+    <div class="flex-container">
+        <div id="myBooks">
+            <h1>My Book List</h1>
+        </div>
+
+        <div id="newBook">
+            <h1>New Book</h1>
+            <form>
+                <div>
+                    <label for="title">Title</label>
+                    <input required type="text" name="title" id="title" placeholder="Title">
+                    <div id="titleError" class="error"></div>
+                </div>
+
+                <div>
+                    <label for="author">Author</label>
+                    <input required type="text" name="author" id="author" placeholder="Author">
+                    <div id="authorError" class="error"></div>
+                </div>
+                <div id="duplicateError" class="error"></div>
+                <div>
+                    <button id="addNewBook" type="button">Add book</button>
+                </div>
+            </form>
+        </div>
+
+    </div>
+
+    <script src="books.js"></script>
+
+</body>
+
+</html>
