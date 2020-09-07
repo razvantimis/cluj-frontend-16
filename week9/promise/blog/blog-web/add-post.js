@@ -3,6 +3,7 @@
 // Pasi implementare adaugare post
 1. Definirea structuri html - input, button etc
 2. Crearea unui obiect cu valorile din inputuri
+3. savePostOnServer - salveaza postul pe server si returneaza un promise
 
 */
 const postCreateButton = document.querySelector('#postCreateButton');
@@ -38,7 +39,8 @@ function savePostOnServer(post) {
     body: JSON.stringify(post)
   }).then(function(response){
     return response.json()
-  })
+  });
+
  return promise;
 }
 
