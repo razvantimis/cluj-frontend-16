@@ -25,18 +25,20 @@ getPosts().then(function (posts) {
   // }
   // --- v3
   posts.forEach(function (post) {
+    const postDOM = createPostDOM(post);
 
     const deleteButton = createDeleteButton();
     deleteButton.addEventListener('click', function () {
       deletePost(post.id)
         .then(function (response) {
           console.log(response);
+          // reincarcam posturile
+          container.removeChild(postDOM);
         })
         .catch(function (err) {
           console.log(err);
         })
     })
-    const postDOM = createPostDOM(post);
     postDOM.appendChild(deleteButton);
 
     container.appendChild(postDOM);

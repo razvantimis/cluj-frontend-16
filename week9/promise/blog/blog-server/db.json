@@ -1,20 +1,5 @@
 {
-  "posts": [
-    {
-      "author": "asdas",
-      "title": "razvan 3",
-      "text": "dasdas",
-      "date": "12/30/2454",
-      "id": "1599498968576"
-    },
-    {
-      "author": "asdas",
-      "title": "razvan",
-      "text": "sdas",
-      "date": "asdas",
-      "id": "1599501607375"
-    }
-  ],
+  "posts": [],
   "comments": [
     {
       "user": "Razvan",
