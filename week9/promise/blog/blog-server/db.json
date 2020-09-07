@@ -1,111 +1,6 @@
 {
   "posts": [
     {
-      "author": "Razvan",
-      "title": "Post 2tesssads",
-      "text": "Post nou",
-      "date": "06/14/2020",
-      "id": "1590229206513"
-    },
-    {
-      "author": "Razvan",
-      "title": "Post 2",
-      "text": "Post nou",
-      "date": "12/03/2020",
-      "id": "1590229208289"
-    },
-    {
-      "author": "Razvan",
-      "title": "Post 2",
-      "text": "Post nou",
-      "date": "12/03/2020",
-      "id": "1590229228226"
-    },
-    {
-      "author": "Razvan",
-      "title": "Post 2",
-      "text": "Post nou",
-      "date": "12/03/2020",
-      "id": "1590229229020"
-    },
-    {
-      "author": "Razvan",
-      "title": "Post 2",
-      "text": "Post nou",
-      "date": "12/03/2020",
-      "id": "1590229229676"
-    },
-    {
-      "author": "Razvan",
-      "title": "Post 2",
-      "text": "Post nou",
-      "date": "12/03/2020",
-      "id": "1590229230241"
-    },
-    {
-      "author": "Razvan",
-      "title": "Post 2",
-      "text": "Post nou",
-      "date": "12/03/2020",
-      "id": "1590229235858"
-    },
-    {
-      "author": "Razvan",
-      "title": "Post 2",
-      "text": "Post nou",
-      "date": "12/03/2020",
-      "id": "1590229236500"
-    },
-    {
-      "author": "Razvan",
-      "title": "Post 2",
-      "text": "Post nou",
-      "date": "12/03/2020",
-      "id": "1590229237066"
-    },
-    {
-      "author": "Razvan",
-      "title": "Post 2",
-      "text": "Post nou",
-      "date": "12/03/2020",
-      "id": "1590229237461"
-    },
-    {
-      "author": "test",
-      "title": "sadas",
-      "text": "asdas",
-      "date": "12/05/2020",
-      "id": "1592114385287"
-    },
-    {
-      "author": "test",
-      "title": "razvan test",
-      "text": "adsadas",
-      "date": "12/05/2020",
-      "id": "1592114412683"
-    },
-    {
-      "author": "razvan",
-      "title": "Razvan test",
-      "text": "sdasdasdas",
-      "date": "06/14/2020",
-      "id": "1592114839037"
-    },
-    {
-      "author": "Alex",
-      "title": "Post Nou",
-      "text": "Post nou",
-      "date": "07/09/2020",
-      "id": "1599496149223"
-    },
-    {
-      "author": "razvan",
-      "title": "title 1",
-      "text": "ce faci",
-      "date": "12/09/2020",
-      "id": "1599498752813"
-    },
-    {
       "author": "asdas",
       "title": "razvan 3",
       "text": "dasdas",
@@ -113,39 +8,11 @@
       "id": "1599498968576"
     },
     {
-      "author": "sdfsd",
-      "title": "test",
-      "text": "sdsd",
-      "date": "sdfsd",
-      "id": "1599498990147"
-    },
-    {
       "author": "asdas",
-      "title": "raasdas",
-      "text": "asdas",
+      "title": "razvan",
+      "text": "sdas",
       "date": "asdas",
-      "id": "1599499076521"
-    },
-    {
-      "author": "asdas",
-      "title": "asdas",
-      "text": "sadas",
-      "date": "asdas",
-      "id": "1599499160480"
-    },
-    {
-      "author": "asdas",
-      "title": "asdas",
-      "text": "sadas",
-      "date": "asdas",
-      "id": "1599499212642"
-    },
-    {
-      "author": "sada",
-      "title": "asdas",
-      "text": "sadas",
-      "date": "asdas",
-      "id": "1599499219961"
+      "id": "1599501607375"
     }
   ],
   "comments": [
