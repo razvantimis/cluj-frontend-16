@@ -18,3 +18,8 @@ Notiuni:
 3. OOP Style
 4. DOM Manipulation
 5. Api request
+
+
+// Pasi implementare adaugare post
+1. Definirea structuri html - input, button etc
+2. 
