@@ -46,6 +46,8 @@ getPosts().then(function (posts) {
 
 })
 
+// stergem postul de pe server
+// Returneaza un promise
 function deletePost(postId) {
   return fetch(`http://localhost:3000/posts/${postId}`, {
     method: 'DELETE'
