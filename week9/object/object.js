@@ -25,8 +25,8 @@ let key = 'name';
 console.log(user[key])
 
 
-function showValue(x){
-  console.log(user[x])
+function showValue(key){
+  console.log(user[key])
 }
 showValue('name')
 showValue('username')
@@ -48,6 +48,7 @@ function run(){
     // aici intra doar prima data cand nu exista
     if(!result[element]){
       result[element] = 0;
+      // { 1: 0}
     }
 
     result[element] = result[element] + 1
@@ -87,7 +88,7 @@ let user = {
   isMen: true,
   login: function(){
     console.log('login user')
-    console.log(this)
+    console.log(this) // contextul in care ruleaza functia
   }
 }
 

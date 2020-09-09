@@ -45,17 +45,18 @@ const dog3 = Dog({
   nume: 'R'
 })
 
+// functie constructor
 function Ornitoring(options) {
   this.culoare = options.culoare;
   this.vastra = options.vastra;
   this.nume = options;
 }
 
-Ornitoring.prototype.faceOua= function () {
+Ornitoring.prototype.faceOua = function () {
 
 }
 
-Ornitoring.prototype.inoata= function () {
+Ornitoring.prototype.inoata = function () {
 
 }
 

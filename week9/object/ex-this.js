@@ -22,7 +22,7 @@ Car.prototype.stop = function(){
 }
 
 const car1 = new Car('dacia')
+// car1.__proto__.start = function(){}
 const car2 = new Car('bmw')
-
 // prototype este acelasi la toate
 Car.prototype == car2.__proto__ == car1.__proto__
