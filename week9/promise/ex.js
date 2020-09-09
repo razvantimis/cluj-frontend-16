@@ -19,6 +19,7 @@ function runExemple(){
       console.log(index) // se afiseaza de la 0..9 pentru ca index este in bloc scop
     }
   }
+  // console.log(index) - nu exista index
 }
 
 // v3
@@ -32,4 +33,5 @@ function runExemple(){
       start(index)
     }, 100)
   }
+  console.log(index) // index = 10
 }
