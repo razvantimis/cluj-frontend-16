@@ -4,4 +4,3 @@
   - How we use 
   - Zoo exemple
 2. Classes
-3. Prototypes
