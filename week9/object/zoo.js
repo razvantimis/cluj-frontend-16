@@ -96,22 +96,3 @@ const ornitoring = {
 
   }
 }
-
-const leu = {
-  culoare: 'galben',
-  vastra: '4',
-  nume: 'Simba',
-  areCoama: true,
-  mananca: function () {
-    console.log('eat')
-  },
-  misca: function () {
-    console.log('move')
-  },
-  zgomot: function () {
-
-  },
-  vaneaza: function () {
-
-  }
-}
