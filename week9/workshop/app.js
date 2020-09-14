@@ -17,7 +17,8 @@ HangMan.prototype.getInput = function () {
   
   userInput.addEventListener("keydown", function(event){
     if(event.key == "Enter"){
-      console.log(event.target.value);
+      const letter = event.target.value;
+      console.log(letter)
     }
   })
 }
