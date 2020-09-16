@@ -40,7 +40,7 @@ HangMan.prototype.getInput = function() {
         if (event.key == "Enter") {
             const letter = event.target.value;
             console.log('letter =', letter)
-            console.log('checkLetter =', self.checkLetter(letter))
+            self.replaceUnderLine(letter)
         }
     })
 }
@@ -59,6 +59,33 @@ HangMan.prototype.checkLetter = function(letter) {
     return false
 }
 
+/*
+Daca checkLetter este true, sa inlocuim underLine cu litera
+Input:
+- letter
+- cuvantulAlex
+
+*/
+HangMan.prototype.replaceUnderLine = function(letter) {
+    const underLinesContainer = document.querySelector('#underLines');
+    if (this.checkLetter(letter)) {
+        // trebe sa inlocuim _ cu letter
+        for (let index = 0; index < this.cuvantAles.length; index++) {
+            const char = this.cuvantAles[index];
+            if (letter === char) {
+                console.log('index =', index);
+                // cautam div dupa index
+                const underLine = underLinesContainer.querySelector(`div:nth-child(${index+1})`);
+                console.log('underLine', underLine)
+                underLine.innerText = letter;
+
+
+            }
+
+        }
+    }
+
+}
 
 const hangMan = new HangMan();
 hangMan.getInput();
