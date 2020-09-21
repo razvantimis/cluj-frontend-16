@@ -2,7 +2,7 @@ function HangMan() {
   this.cuvinte = ["masina", "telecomanda", "telefon", "teleenciclopedie"];
 
   // alegem cuvantul random
-  var randomIndex = Math.floor(Math.random() * this.cuvinte.length);
+  const randomIndex = Math.floor(Math.random() * this.cuvinte.length);
   this.cuvantAles = this.cuvinte[randomIndex];
   console.log('cuvantAles = ', this.cuvantAles);
   this.underLines = {};
@@ -24,7 +24,7 @@ HangMan.prototype.renderUnderLines = function () {
   underLinesContainer.style.display = 'flex'
   underLinesContainer.style.flexDirection = 'row'
   for (let index = 0; index < this.cuvantAles.length; index++) {
-    let underLineDiv = document.createElement('div');
+    const underLineDiv = document.createElement('div');
     underLineDiv.style.margin = '5px'
     // innerText/innerHtml putem seta in string 
     underLineDiv.innerText = '_';
@@ -51,14 +51,16 @@ Sa obtina inputul de la user
 4. Afisam valoarea doar daca sa apasat enter
 */
 HangMan.prototype.getInput = function () {
+  // this - este cel corect , adica obiectul HangMan
   const userInput = document.querySelector('#userInput');
 
-  const self = this;
-  userInput.addEventListener("keydown", function (event) {
+  userInput.addEventListener("keydown",  event => {
+    // this de interior va fi cel de mai sus
+    console.log('getInput#this', this)
     if (event.key == "Enter") {
       const letter = event.target.value;
       console.log('letter =', letter)
-      self.replaceUnderLine(letter)
+      this.replaceUnderLine(letter)
     }
   })
 }
@@ -105,7 +107,7 @@ Input:
 HangMan.prototype.replaceUnderLine = function (letter) {
   if (this.checkLetter(letter)) {
     // vrem sa obtinem underLine din DOM fara sa facem for
-    this.underLines[letter].forEach(function (div) {
+    this.underLines[letter].forEach( div => {
       div.innerText = letter;
     })
   }
