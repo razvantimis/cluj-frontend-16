@@ -52,3 +52,76 @@ userInput.addEventListener('keydown', () => {
    console.log('this', this)
 })
 // 3. Class
+class Car {
+  constructor(type){
+    this.__type = type;
+  }
+  
+  start(){
+    console.log('start')
+  }
+}
+
+const car1 = new Car('dacia')
+
+// 4. Inheritance
+class Animal {
+  constructor(name) {
+    this.name = name;
+  }
+
+  eat() {
+    console.log('eat');
+  }
+
+  move() {
+    console.log('merg');
+  }
+}
+
+
+class Dog extends Animal {
+  constructor(name) {
+    super(name);
+  }
+
+  eat() {
+    console.log('eat & face mizerie');
+  }
+
+  woff() {
+  }
+}
+
+
+// 5. Composition
+class Post {
+  constructor(title, comments) {
+    this.title = title;
+    this.comments = comments;
+  }
+}
+
+class Comment {
+  constructor(text) {
+    this.text = text;
+  }
+}
+
+const com1 = new Comment('com1')
+const com2 = new Comment('com2')
+
+const post1 = new Post('post1', [com1, com2])
+
+// 6. Polymorphism
+
+const animal1 = new Animal('leu');
+const animal2 = new Dog('rex');
+const listDeAnimale = [animal1, animal2]
+for (let index = 0; index < listDeAnimale.length; index++) {
+  const element = listDeAnimale[index];
+
+  console.log(element.eat())
+  
+}
+
