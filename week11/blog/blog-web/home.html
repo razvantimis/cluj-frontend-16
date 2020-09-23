@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog - Home</title>
+</head>
+<body>
+  <div class="create-post">
+    <div class="input-section">
+      Titlu: <input type="text" id="postTitle">
+    </div>
+    <div class="input-section">
+      Text: <input type="text" id="postText">
+    </div>
+    <div class="input-section">
+      Autor: <input type="text" id="postAuthor">
+    </div>
+    <div class="input-section">
+      Date: <input type="text" id="postDate">
+    </div>
+    <button type="button" id="postCreateButton">Adauga post</button>
+  </div>
+
+  <div id="posts"></div>
+  <script src="./get-posts.js"></script>
+  <script src="./add-post.js"></script>
+</body>
+</html>
