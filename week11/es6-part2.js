@@ -45,6 +45,7 @@ async function runTask(name) {
     // throwAError(index)
   }
   console.log(`name=${name} ----- cod in runTask`)
+  return 10;
 
 }
 async function showConsoleLog(name){
@@ -65,7 +66,7 @@ async function main() {
 // v2
 async function main() {
   try {
-    await runTask();
+    const data = await runTask(); // data va fi valoarea 10
     console.log('se executa dupa ce se termina runTask')
   } catch (err) {
     console.log(err)
@@ -85,3 +86,11 @@ runTask()
 
 
 //  5. Array - map, reducer, forEach, 
+
+
+// map
+
+const array = [ 1, 2 ,3];
+console.log(array.map(value => {
+  return value + 10
+}))
