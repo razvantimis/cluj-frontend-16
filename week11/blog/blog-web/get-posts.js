@@ -1,4 +1,22 @@
+class Post {
+  constructor(title, text){
+    this.title = title
+    this.text = text;
+  }
 
+  render(){
+    const postDOM = document.createElement('div');
+    postDOM.style.border = "1px solid red"
+    postDOM.style.margin = "10px";
+    postDOM.style.padding = "10px";
+  
+    postDOM.innerHTML = `
+    <h3>${this.title}</h3>
+    <p>${this.text}</p>`
+  
+    return postDOM;
+  }
+}
 
 // function getPosts() {
 //   return fetch('http://localhost:3000/posts')
@@ -63,7 +81,9 @@ async function main() {
 
     // transformam un obiect post in reprezentarea lui in HTML
     // postsDOM = [ div , div , .....]
-    const postsDOM = posts.map(createPostDOM);
+    const postsDOM = posts
+    .map(post => new Post(post.title, post.text))
+    .map(postObject => postObject.render());
 
     // am adaugat div-urile de mai sus , in container
     postsDOM.forEach(postDOM => container.appendChild(postDOM))
@@ -85,17 +105,4 @@ function createDeleteButton() {
 
   return deleteButton;
 
-}
-
-function createPostDOM(post) {
-  const postDOM = document.createElement('div');
-  postDOM.style.border = "1px solid red"
-  postDOM.style.margin = "10px";
-  postDOM.style.padding = "10px";
-
-  postDOM.innerHTML = `
-  <h3>${post.title}</h3>
-  <p>${post.text}</p>`
-
-  return postDOM;
 }
