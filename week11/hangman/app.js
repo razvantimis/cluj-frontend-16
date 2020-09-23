@@ -94,8 +94,8 @@ class Hangman {
     } else {
       this.vieti = this.vieti - 1
       console.log(this.vieti);
-      this.showVieti(this.vieti);
       // update in dom la nr vieti
+      this.showVieti(this.vieti);
     }
 
   }
