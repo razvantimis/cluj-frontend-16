@@ -5,4 +5,4 @@
 4. Sa afisam cate o liniuta pentru fiecare litera din cuvantul ales
 5. Daca literea apare in cuvant atunci punem in locul liniutei cu litera
 6. Daca gasim o literea, le afisam pe toate de acelasi tip
-7. Un number de vieti, daca ajunge la zero este game over
+7. Un numar de vieti, daca ajunge la zero este game over
