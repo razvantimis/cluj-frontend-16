@@ -71,6 +71,15 @@ async function deletePost(postId) {
 
 // })
 
+function cleanAndFetchGame(){
+  // stergem tot
+  const container = document.querySelector('#posts')
+  container.innerHtml = ""
+  // facem din nou lista de posturi
+  main();
+
+}
+
 async function main() {
   const container = document.querySelector('#posts')
   try {
