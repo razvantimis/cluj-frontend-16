@@ -71,7 +71,7 @@ async function deletePost(postId) {
 
 // })
 
-function cleanAndFetchGame(){
+function cleanAndFetchGames(){
   // stergem tot
   const container = document.querySelector('#posts')
   container.innerHtml = ""
