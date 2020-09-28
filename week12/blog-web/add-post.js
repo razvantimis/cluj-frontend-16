@@ -21,7 +21,7 @@ function createPost() {
   // }
   console.log(post)
 
-  savePostOnServer(post)
+  ServerApi.savePost(post)
     .then(function (response) {
       console.log(response)
     }).catch(function (err) {
@@ -30,19 +30,6 @@ function createPost() {
 
 }
 
-function savePostOnServer(post) {
-  const promise = fetch("http://localhost:3000/posts", {
-    method: 'POST',
-    headers: {
-      "Content-Type": "application/json"
-    },
-    body: JSON.stringify(post)
-  }).then(function(response){
-    return response.json()
-  });
-
- return promise;
-}
 
 function getPostData() {
   const postTitle = document.querySelector('#postTitle').value;

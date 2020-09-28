@@ -1,14 +1,14 @@
 // inaite de es6
-function Car(type){
- this.type = type
+function Car(type) {
+  this.type = type
 }
 
-Car.prototype.start = function(){
+Car.prototype.start = function () {
   console.log('start')
   console.log('start() => speed limit =', Car.SPEED_LIMIT)
 }
 Car.SPEED_LIMIT = 200; // var SPEED_LIMIT = 200
-Car.clean = function(){
+Car.clean = function () {
   console.log('clean')
 }
 
@@ -21,16 +21,16 @@ console.log('global => speed limit =', Car.SPEED_LIMIT)
 class Car {
   static SPEED_LIMIT = 200;
 
-  static clean(){
+  static clean() {
     console.log('clean')
   }
 
-  constructor(type){
+  constructor(type) {
     this.type = type;
     // this.SPEED_LIMIT = 200;
   }
 
-  start(){
+  start() {
     console.log('start')
     console.log('start() => speed limit =', Car.SPEED_LIMIT)
   }
@@ -47,12 +47,12 @@ const car2 = new Car();
 // real exemple
 
 class ServerApi {
-  async static getPosts() {
+  static async getPosts() {
     const response = await fetch('http://localhost:3000/posts');
     return response.json()
   }
 
-  async static deletePost(postId) {
+  static async deletePost(postId) {
     const response = await fetch(`http://localhost:3000/posts/${postId}`, { method: 'DELETE' })
     return response.json();
   }
