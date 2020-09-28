@@ -8,3 +8,21 @@ console.log(
     .map(nr => nr + 1)
     .map(nr => nr / 2)
 )
+
+// .reducer
+const array = [23, 45, 98];
+
+console.log(
+  array.reduce((acumulator, nr) => {
+    return acumulator + nr;
+  }, 0)
+)
+// acumulator = 0
+// pas1: 0 + 23
+// pas2: 23 + 45
+// pas3: 68 + 98
+
+// .forEach
+array.forEach(function(nr){
+  console.log(nr)
+})
