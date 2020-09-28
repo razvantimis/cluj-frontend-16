@@ -1,7 +1,7 @@
 ES6 - 2015
  6. Static method
  7. undefined vs ReferenceError
- 8. Template literals
+ 8. Template literals/strings
  9. Array - map, reducer, forEach, 
  10. Destructuring
     10.1 Destructuring Object
