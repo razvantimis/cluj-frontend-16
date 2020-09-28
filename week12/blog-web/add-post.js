@@ -12,7 +12,7 @@ postCreateButton.addEventListener('click', createPost);
 function createPost() {
   console.log('start create post')
 
-  const post = getPostData() // sa returneze un obiect post
+  const post = getPostDataFromHtmlForm() // sa returneze un obiect post
   // {
   // 	"author": "" - input de autor,
   //   "title": "" - din input,
@@ -31,7 +31,7 @@ function createPost() {
 }
 
 
-function getPostData() {
+function getPostDataFromHtmlForm() {
   const postTitle = document.querySelector('#postTitle').value;
   const postAuthor = document.querySelector('#postAuthor').value;
   const postText = document.querySelector('#postText').value;
