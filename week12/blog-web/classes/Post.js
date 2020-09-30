@@ -12,7 +12,8 @@ class Post {
 
     postDOM.innerHTML = `
     <h3>${this.title}</h3>
-    <p>${this.text}</p>`
+    <p>${this.text.substring(0, 300)} ...</p>
+        <a href="./view-post.html" >view post</a>`
 
     return postDOM;
   }
