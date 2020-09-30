@@ -3,15 +3,20 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Blog - Home</title>
+  <title>Edit post</title>
 </head>
 <body>
-  <div class="create-post">
+  <nav>
+    <a href="./home.html">Home</a>
+  </nav>
+
+  <div class="edit-post">
     <div class="input-section">
       Titlu: <input type="text" id="postTitle">
     </div>
     <div class="input-section">
       Text: <textarea type="text" id="postText" rows="10"></textarea>
+
     </div>
     <div class="input-section">
       Autor: <input type="text" id="postAuthor">
@@ -19,14 +24,7 @@
     <div class="input-section">
       Date: <input type="text" id="postDate">
     </div>
-    <button type="button" id="postCreateButton">Adauga post</button>
+    <button type="button" id="postUpdateButton">Update post</button>
   </div>
-
-  <div id="posts"></div>
-  <script src="./classes/ServerApi.js"></script>
-  <script src="./classes/Post.js"></script>
-  <script src="./add-post.js"></script>
-  <script src="./get-posts.js"></script>
-  
 </body>
 </html>
