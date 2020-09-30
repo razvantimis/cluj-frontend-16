@@ -17,3 +17,5 @@ class Post {
     return postDOM;
   }
 }
+// instanta a clasei Post
+// const post1 = new Post()

@@ -1,5 +1,5 @@
 
-async function main() {
+async function displayPostsInHtml() {
   const container = document.querySelector('#posts')
   try {
     // aici se aduc posturile de pe server
@@ -7,11 +7,15 @@ async function main() {
     const posts = await ServerApi.getPosts();
     console.log(posts);
 
+    // tranformam obiectele de la server, in instante a clasei Post
+    const postsObject = posts
+      .map(post => new Post(post.title, post.text))
+
     // transformam un obiect post in reprezentarea lui in HTML
     // postsDOM = [ div , div , .....]
-    const postsDOM = posts
-      .map(post => new Post(post.title, post.text))
-      .map(postObject => postObject.render());
+    const postsDOM = postsObject.map(function (postObject) {
+      return postObject.render()
+    });
 
     // am adaugat div-urile de mai sus , in container
     postsDOM.forEach(postDOM => container.appendChild(postDOM))
@@ -23,14 +27,4 @@ async function main() {
 
 }
 
-main();
-
-
-
-function createDeleteButton() {
-  const deleteButton = document.createElement('button');
-  deleteButton.innerText = "Delete";
-  deleteButton.style.border = "1px solid green"
-
-  return deleteButton;
-}
+displayPostsInHtml();
