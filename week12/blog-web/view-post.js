@@ -1,6 +1,7 @@
 // 1. Obtinem id din url
 const idPost = window.location.search.substring(4);
 console.log("idPost = ", idPost);
+
 // 2. Facem requestul la server dupa post-ul cu id din url
 ServerApi.getPostById(idPost).then(function (post) {
   console.log("post =", post)
@@ -9,6 +10,7 @@ ServerApi.getPostById(idPost).then(function (post) {
   postContainer.innerHTML = `
   <h3>${post.title}</h3>
   <p>${post.text} </p>
+  <a href="./edit-post.html?id=${idPost}">Edit post</a>
   `
 })
 
