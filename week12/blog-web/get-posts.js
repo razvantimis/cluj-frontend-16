@@ -8,7 +8,7 @@ async function displayPostsInHtml() {
 
         // tranformam obiectele de la server, in instante a clasei Post
         const postsObject = posts
-            .map(post => new Post(post.title, post.text))
+            .map(post => new Post(post.title, post.text, post.id))
 
         // transformam un obiect post in reprezentarea lui in HTML
         // postsDOM = [ div , div , .....]

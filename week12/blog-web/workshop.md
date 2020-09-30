@@ -24,5 +24,6 @@ Detalii implementare:
 
 1. Pe home, sa avem o descriere mai scurta de la un post
 2. Sa avem un link, care sa dupa spre pagina de view post ( pe pagina asta sa vedem tot postul cu intregul text)
+3. Pe pagina view-post.html, sa afisam intregul post
 
 

@@ -1,7 +1,8 @@
 class Post {
-  constructor(title, text) {
+  constructor(title, text, id) {
     this.title = title
-    this.text = text;
+    this.text = text
+    this.id = id
   }
 
   render() {
@@ -13,7 +14,8 @@ class Post {
     postDOM.innerHTML = `
     <h3>${this.title}</h3>
     <p>${this.text.substring(0, 300)} ...</p>
-        <a href="./view-post.html" >view post</a>`
+    <a href="./view-post.html?id=${this.id}" >view post</a>
+`
 
     return postDOM;
   }
