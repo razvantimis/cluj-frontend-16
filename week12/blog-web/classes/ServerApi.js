@@ -1,6 +1,11 @@
 
 class ServerApi {
 
+  static async getPostById(idPost) {
+    const response = await fetch(`http://localhost:3000/posts/${idPost}`)
+    return response.json()
+  }
+
   static async getPosts() {
     const response = await fetch('http://localhost:3000/posts');
     return response.json()
