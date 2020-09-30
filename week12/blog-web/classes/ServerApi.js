@@ -29,4 +29,16 @@ class ServerApi {
 
     return response.json();
   }
+
+  static async editPost(postData, postId) {
+    const response = await fetch(`http://localhost:3000/posts/${postId}`, {
+      method: 'PUT',
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify(postData)
+    });
+
+    return response.json();
+  }
 }
