@@ -11,3 +11,14 @@ ServerApi.getPostById(idPost).then(function (post) {
   <p>${post.text} </p>
   `
 })
+
+const deletePostButton = document.getElementById('deletePostButton');
+
+deletePostButton.addEventListener('click', function () {
+  // // 1. stergem post-ul de pe server
+  ServerApi.deletePost(idPost).then(function (response) {
+    // 2. sa ne duca inapoi pe home.html
+    window.location.href = "./home.html"
+  })
+
+})
