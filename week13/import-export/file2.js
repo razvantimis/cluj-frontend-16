@@ -1,2 +1,2 @@
-const list = [];
+const list = [1, 2, 3];
 export { list };

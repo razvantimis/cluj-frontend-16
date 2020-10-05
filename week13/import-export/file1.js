@@ -1,2 +1,2 @@
-import {list} from './file2.js';
+import { list } from './file2.js';
 console.log(list)
