@@ -14,8 +14,8 @@ class Post {
     postDOM.innerHTML = `
     <h3>${this.title}</h3>
     <p>${this.text.substring(0, 300)} ...</p>
-    <a href="./view-post.html?id=${this.id}" >view post</a>
-    <a href="./edit-post.html?id=${this.id}" >edit post</a>
+    <a href="#/view-post?id=${this.id}" >view post</a>
+    <a href="#/edit-post?id=${this.id}" >edit post</a>
 `
 
     return postDOM;
