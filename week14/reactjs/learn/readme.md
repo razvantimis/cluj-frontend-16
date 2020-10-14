@@ -5,9 +5,9 @@
 5. Add styling / css file on component
 6. Use Class for create a component
 7. Condition rendering
-8. Use state for condition render
-9. State vs props https://reactjs.org/docs/faq-state.html#what-is-the-difference-between-state-and-props
-10. Add click event on Post component
+8. Add click event on Post component
+9. Use state for condition render
+10. State vs props https://reactjs.org/docs/faq-state.html#what-is-the-difference-between-state-and-props
 11. Show list of post from App component
 12. Life cycle of components https://reactjs.org/docs/state-and-lifecycle.html
 
