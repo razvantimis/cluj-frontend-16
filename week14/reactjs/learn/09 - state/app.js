@@ -12,9 +12,9 @@ class CounterApp extends React.Component {
   handleButtonClick = () => {
     console.log('click')
 
-    const counter = this.state.counter + 1;
+    const counterValue = this.state.counter + 1;
     this.setState({
-      counter: counter
+      counter: counterValue
     })
   }
 
