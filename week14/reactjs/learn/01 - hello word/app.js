@@ -10,7 +10,7 @@
 
 // version reactjs
 
-const HelloComponent = React.createElement('div', null, 'Hello word') // nu folosesc document.createElement
-
+// const HelloComponent = React.createElement('div', null, 'Hello word') // nu folosesc document.createElement
+const HelloComponent = (<div>Hello word</div>)
 const appDOM = document.getElementById('app');
 ReactDOM.render(HelloComponent, appDOM) // document.createElement
