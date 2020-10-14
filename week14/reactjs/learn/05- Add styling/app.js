@@ -1,4 +1,4 @@
-// 4. Add App component - functie, use props
+// 5. Styling
 // sa afisam 3 posturi 
 
 function PostComponent(props) {
