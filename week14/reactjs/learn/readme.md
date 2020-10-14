@@ -10,3 +10,6 @@
 10. Add click event on Post component
 11. Show list of post from App component
 12. Life cycle of components https://reactjs.org/docs/state-and-lifecycle.html
+
+Bonus:
+13: “source of truth” https://reactjs.org/docs/lifting-state-up.html 
