@@ -1,6 +1,6 @@
 // 8. Event
 
-class App extends React.Component {
+class CounterApp extends React.Component {
 
   constructor() {
     super();
@@ -31,4 +31,4 @@ class App extends React.Component {
 
 
 const appDOM = document.getElementById('app');
-ReactDOM.render(<App />, appDOM) 
+ReactDOM.render(<CounterApp />, appDOM) 
