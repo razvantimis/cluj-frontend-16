@@ -1,7 +1,7 @@
 1. Hello word ( ReactJs vs DOM) https://reactjs.org/docs/add-react-to-a-website.html
 2. Post - title and content ( ReactJs vs DOM)
 3. JSX Post
-4. Add App component, use props
+4. Add App component - functie, use props
 5. Add styling / css file on component
 6. Use Class for create a component
 7. Condition rendering
