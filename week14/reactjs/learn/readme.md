@@ -8,8 +8,9 @@
 8. Add click event on Post component
 9. Use state for condition render
 10. State vs props https://reactjs.org/docs/faq-state.html#what-is-the-difference-between-state-and-props
-11. Show list of post from App component
-12. Life cycle of components https://reactjs.org/docs/state-and-lifecycle.html
+11. React Developer Tools
+12. Show list of post from App component
+13. Life cycle of components https://reactjs.org/docs/state-and-lifecycle.html
 
 Bonus:
 13: “source of truth” https://reactjs.org/docs/lifting-state-up.html 
