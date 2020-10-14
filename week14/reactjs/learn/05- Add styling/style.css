@@ -1,0 +1,13 @@
+.single-post {
+  background-color: bisque;
+  margin: 10px;
+}
+.single-post h1 {
+  font-size: 18px;
+  color: red;
+}
+
+.single-post p {
+  font-size: 12px;
+  color: black
+}
