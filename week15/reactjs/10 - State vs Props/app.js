@@ -72,7 +72,7 @@ class App extends React.Component {
     return /*#__PURE__*/ React.createElement(
       "div",
       null,
-      /*#__PURE__*/ React.createElement(PostList, null)
+      /*#__PURE__*/ React.createElement(PostList, null) // new PostList()
     );
   }
 }

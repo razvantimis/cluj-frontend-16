@@ -51,6 +51,10 @@ export default class AddPost {
             date: postDate
         }
     }
+   
+    createPostMethod = () => {
+      this.createPost();
+    };
 
     render(container) {
         const addButton = document.createElement('button');
@@ -58,9 +62,7 @@ export default class AddPost {
 
         this.addPostContainer.appendChild(addButton);
 
-        addButton.addEventListener('click', () => {
-            this.createPost();
-        })
+        addButton.addEventListener('click', this.createPostMethod)
 
         container.appendChild(this.addPostContainer);
     }
