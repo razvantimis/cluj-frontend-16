@@ -8,6 +8,13 @@ function PostComponent(props) {
       <p>{props.content}</p>
     </div>
   )
+  /*
+  return React.createElement('div', null,
+    React.createElement('h1', null, props.title),
+    React.createElement('p', null, props.content)
+  )
+
+  */
 }
 
 function PostList() {
@@ -19,6 +26,21 @@ function PostList() {
       <PostComponent title={'Post 3'} content={'Post Content 3'} />
     </div>
   )
+  /*
+
+React.createElement(
+  "div",
+  null,
+   React.createElement("h2", null, "Lista posturi"),
+   React.createElement(PostComponent, {
+    title: "Post 1",
+    content: "Post Content 1",
+    abc: 1
+  }),
+ ....
+);
+
+  */
 }
 
 function App() {
