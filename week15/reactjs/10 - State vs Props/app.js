@@ -21,23 +21,35 @@ function Post(props) {
 
 
 class PostList extends React.Component {
-  handleInputChangeValue = () => {
-    console.log('change')
+  constructor() {
+    super();
+    this.state = {
+      posts: [
+        { title: 'post 1sdas', content: 'post content 1' },
+        { title: 'post 2', content: 'post content 2' },
+        { title: 'post 3', content: 'post content 3' },
+        { title: 'post 4', content: 'post content 4' },
+        { title: 'post 5', content: 'post content 5' },
+      ]
+    }
+  }
+  handleInputChangeValue = (event) => {
+    // event este un obiect cu valori care descrie eventul facut de user
+    // de pe event am luat valoare
+    console.log('se cauta dupa =', event.target.value)
+    const postFiltred = filterPost(event.target.value);
+    console.log('post-urile filtrare = ', postFiltred)
+    this.setState({
+      posts: postFiltred
+    })
   }
 
   render() {
-    const posts = [
-      { title: 'post 1', content: 'post content 1' },
-      { title: 'post 2', content: 'post content 2' },
-      { title: 'post 3', content: 'post content 3' },
-      { title: 'post 4', content: 'post content 4' },
-      { title: 'post 5', content: 'post content 5' },
-    ]
     return (
       <div>
         <input onChange={this.handleInputChangeValue}></input>
         <h2>Lista posturi</h2>
-        {posts.map(function (postData) {
+        {this.state.posts.map(function (postData) {
           return (<Post title={postData.title /* = post 1 */} content={postData.content} />)
         })}
       </div>
@@ -59,4 +71,25 @@ class App extends React.Component {
 
 
 const appDOM = document.getElementById('app');
-ReactDOM.render(<App />, appDOM) 
+ReactDOM.render(<App />, appDOM)
+
+// returnam un array cu post-urile filtrare
+function filterPost(searchQuery) {
+  const posts = [
+    { title: 'post 1sdas', content: 'post content 1' },
+    { title: 'post 2', content: 'post content 2' },
+    { title: 'post 3', content: 'post content 3' },
+    { title: 'post 4', content: 'post content 4' },
+    { title: 'post 5', content: 'post content 5' },
+  ]
+
+  const postFiltred = [];
+  // logica de filtrare
+  for (let index = 0; index < posts.length; index++) {
+    const post = posts[index];
+    if (post.title.includes(searchQuery)) {
+      postFiltred.push(post);
+    }
+  }
+  return postFiltred;
+}
