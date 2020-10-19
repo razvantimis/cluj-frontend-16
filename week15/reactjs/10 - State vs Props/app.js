@@ -69,6 +69,11 @@ class App extends React.Component {
         <PostList />
       </div>
     )
+    return /*#__PURE__*/ React.createElement(
+      "div",
+      null,
+      /*#__PURE__*/ React.createElement(PostList, null)
+    );
   }
 }
 
