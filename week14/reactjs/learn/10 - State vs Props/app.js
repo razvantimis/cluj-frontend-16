@@ -1,5 +1,6 @@
 //10. State vs props https://reactjs.org/docs/faq-state.html#what-is-the-difference-between-state-and-props
-
+// Afisam o lista de posturi
+// Sa putem filtra post-urile dupa titlu
 function Post(props) {
 
   return (
@@ -8,7 +9,16 @@ function Post(props) {
       <p>{props.content}</p>
     </div>
   )
+  // React.createElement(
+  //   "div",
+  //   {
+  //     className: "single-post"
+  //   },
+  //   props.title ? /*#__PURE__*/ React.createElement("h1", null, props.title) : "",
+  //   /*#__PURE__*/ React.createElement("p", null, props.content)
+  // );
 }
+
 
 class PostList extends React.Component {
   handleInputChangeValue = () => {
@@ -27,11 +37,12 @@ class PostList extends React.Component {
       <div>
         <input onChange={this.handleInputChangeValue}></input>
         <h2>Lista posturi</h2>
-        {posts.map(postData => (<Post title={postData.title} content={postData.content} />))}
+        {posts.map(postData => (<Post title={postData.title /* = post 1 */} content={postData.content} />))}
       </div>
     )
   }
 }
+
 
 class App extends React.Component {
 
