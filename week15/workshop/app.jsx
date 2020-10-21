@@ -20,6 +20,18 @@ class Player extends React.Component {
     }
   }
 }
+
+class Obstacle extends React.Component {
+  render() {
+    const obstacleStyle = {
+      top: this.props.top,
+      left: this.props.left
+    }
+    return (
+      <div className="obstacle" style={obstacleStyle}></div>
+    )
+  }
+}
 class Game extends React.Component {
   constructor() {
     super();
@@ -94,6 +106,10 @@ class Game extends React.Component {
     return (
       <div className="game-area">
         <Player top={this.state.top} left={this.state.left} />
+        <Obstacle top={20} left={50}/>
+        <Obstacle top={16} left={70}/>
+        <Obstacle top={60} left={40}/>
+        <Obstacle top={20} left={20}/>
       </div>
     )
   }
