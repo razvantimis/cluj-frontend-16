@@ -36,12 +36,11 @@ class Game extends React.Component {
   constructor() {
     super();
     this.obstacleList = [
-      { top: 20, left: 50 },
-      { top: 16, left: 70 },
-      { top: 60, left: 40 },
+      { top: 70, left: 70 },
+      { top: 60, left: 50 },
       { top: 90, left: 100 },
       { top: 88, left: 123 },
-      { top: 45, left: 20 },
+      { top: 45, left: 200 },
     ]
     this.state = {
       top: 0,
@@ -74,7 +73,9 @@ class Game extends React.Component {
     // 3. Setam noile valori pe state - this.setState
     // Facem verificam
     const isInValidMove = this.isPlayerOutsideOfGameArea(nextTop, nextLeft)
-    if (!isInValidMove) {
+    const isCollision = this.isPlayerColiding(nextTop, nextLeft)
+    console.log('isCollision', isCollision)
+    if (!isInValidMove && !isCollision) {
       this.setState({
         top: nextTop,
         left: nextLeft
@@ -111,17 +112,24 @@ class Game extends React.Component {
   }
 
   // Va returna true daca player se intersecteaza cu cel putin un obstacol
-  isPlayerColiding(top, left) {
-  
+  isPlayerColiding(playerTop, playerLeft) {
+    for (const obstacle of this.obstacleList) {
+      // 10 - 40
+      if (
+        (obstacle.top <= playerTop && playerTop <= obstacle.top + 30) &&
+        (obstacle.left <= playerLeft && playerLeft <= obstacle.left + 30)
+      ) {
+        return true
+      }
+    }
+    return false;
   }
 
   render() {
-    
-
     return (
       <div className="game-area">
         <Player top={this.state.top} left={this.state.left} />
-        {obstacleList
+        {this.obstacleList
           .map(obstacleItem => (
             <Obstacle
               top={obstacleItem.top}
