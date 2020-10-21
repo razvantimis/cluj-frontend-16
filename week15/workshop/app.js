@@ -1,12 +1,12 @@
-class App extends React.Component {
+class Game extends React.Component {
   render() {
     return (
-      <div>
-        Gol
+      <div className="game-area">
+        player
       </div>
     )
   }
 }
 
 const appDOM = document.getElementById('app');
-ReactDOM.render(<App />, appDOM)
+ReactDOM.render(<Game />, appDOM)
