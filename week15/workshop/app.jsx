@@ -1,3 +1,15 @@
+export class Player extends React.Component {
+  render() {
+    const stylePlayer = {
+      top: this.props.top,
+      left: this.props.left
+    }
+
+    return (
+      <div className="player" style={stylePlayer}></div>
+    )
+  }
+}
 class Game extends React.Component {
   constructor() {
     super();
@@ -59,18 +71,6 @@ class Game extends React.Component {
   }
 }
 
-class Player extends React.Component {
-  render() {
-    const stylePlayer = {
-      top: this.props.top,
-      left: this.props.left
-    }
-
-    return (
-      <div className="player" style={stylePlayer}></div>
-    )
-  }
-}
 
 const appDOM = document.getElementById('app');
 ReactDOM.render(<Game />, appDOM)
