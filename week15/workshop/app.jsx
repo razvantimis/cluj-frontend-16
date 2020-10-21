@@ -73,7 +73,7 @@ class Game extends React.Component {
     // 3. Setam noile valori pe state - this.setState
     // Facem verificam
     const isInValidMove = this.isPlayerOutsideOfGameArea(nextTop, nextLeft)
-    const isCollision = this.isPlayerColiding(nextTop, nextLeft)
+    const isCollision = this.isPlayerCollision(nextTop, nextLeft)
     console.log('isCollision', isCollision)
     if (!isInValidMove && !isCollision) {
       this.setState({
@@ -112,7 +112,7 @@ class Game extends React.Component {
   }
 
   // Va returna true daca player se intersecteaza cu cel putin un obstacol
-  isPlayerColiding(playerTop, playerLeft) {
+  isPlayerCollision(playerTop, playerLeft) {
     for (const obstacle of this.obstacleList) {
       // 10 - 40
       if (
