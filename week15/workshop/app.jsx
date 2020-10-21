@@ -1,4 +1,4 @@
-export class Player extends React.Component {
+class Player extends React.Component {
   render() {
     const stylePlayer = {
       top: this.props.top,
@@ -8,6 +8,16 @@ export class Player extends React.Component {
     return (
       <div className="player" style={stylePlayer}></div>
     )
+  }
+
+  static getPlayerSize(){
+    const playerDiv = document.querySelector('.player');
+    const playerStyle = getComputedStyle(playerDiv);
+
+    return {
+      width: parseInt(playerStyle.width),
+      height: parseInt(playerStyle.height),
+    }
   }
 }
 class Game extends React.Component {
@@ -55,10 +65,28 @@ class Game extends React.Component {
   // Returnam true daca player este inafara
   // false daca este in interior
   isPlayerOutsideOfGameArea(top, left) {
-    if (top < 0 || top > 400 - 20 || left < 0 || left > 400 - 20) {
+    const gameAeraSize = Game.getGameAeraSize();
+    const playerSize = Player.getPlayerSize();
+
+    if (
+      top < 0 ||
+      top > gameAeraSize.height - playerSize.height ||
+      left < 0 ||
+      left > gameAeraSize.width - playerSize.width
+    ) {
       return true;
     } else {
       return false;
+    }
+  }
+
+  static getGameAeraSize() {
+    const gameAeraDiv = document.querySelector('.game-area')
+    const gameAeraStyle = getComputedStyle(gameAeraDiv)
+
+    return {
+      width: parseInt(gameAeraStyle.width),
+      height: parseInt(gameAeraStyle.height),
     }
   }
 
