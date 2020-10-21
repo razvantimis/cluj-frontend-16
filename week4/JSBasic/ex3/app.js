@@ -67,3 +67,11 @@ console.log(sumaTotala)
 // compute how many times a certain element appears in an array
 var findElement = 2
 var list = [2, 1, 2, 3, 2, 6, 8, 9]
+
+
+
+
+let object = {};
+
+object.name = 'razvan'
+// object va fi { name: razvan }

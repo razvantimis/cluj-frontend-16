@@ -10,7 +10,7 @@ class Player extends React.Component {
     )
   }
 
-  static getPlayerSize(){
+  static getPlayerSize() {
     const playerDiv = document.querySelector('.player');
     const playerStyle = getComputedStyle(playerDiv);
 
@@ -35,6 +35,14 @@ class Obstacle extends React.Component {
 class Game extends React.Component {
   constructor() {
     super();
+    this.obstacleList = [
+      { top: 20, left: 50 },
+      { top: 16, left: 70 },
+      { top: 60, left: 40 },
+      { top: 90, left: 100 },
+      { top: 88, left: 123 },
+      { top: 45, left: 20 },
+    ]
     this.state = {
       top: 0,
       left: 0
@@ -102,14 +110,25 @@ class Game extends React.Component {
     }
   }
 
+  // Va returna true daca player se intersecteaza cu cel putin un obstacol
+  isPlayerColiding(top, left) {
+  
+  }
+
   render() {
+    
+
     return (
       <div className="game-area">
         <Player top={this.state.top} left={this.state.left} />
-        <Obstacle top={20} left={50}/>
-        <Obstacle top={16} left={70}/>
-        <Obstacle top={60} left={40}/>
-        <Obstacle top={20} left={20}/>
+        {obstacleList
+          .map(obstacleItem => (
+            <Obstacle
+              top={obstacleItem.top}
+              left={obstacleItem.left}
+            />
+          ))
+        }
       </div>
     )
   }
