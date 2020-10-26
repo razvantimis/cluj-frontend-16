@@ -1,9 +1,9 @@
 import React from 'react'
-import { Obstacle } from './components/Obstacle/Obstacle';
-import { Player } from './components/Player/Player';
+import { Obstacle } from '../../components/Obstacle/Obstacle';
+import { Player } from '../../components/Player/Player';
 import './Game.css';
 
-class Game extends React.Component {
+export class Game extends React.Component {
   constructor() {
     super();
     this.obstacleList = [
@@ -110,5 +110,3 @@ class Game extends React.Component {
     )
   }
 }
-
-export default Game;
