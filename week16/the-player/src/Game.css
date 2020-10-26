@@ -1,0 +1,7 @@
+.game-area {
+  width: 400px;
+  height: 400px;
+  margin: auto;
+  background-color: white;
+  position: relative;
+}

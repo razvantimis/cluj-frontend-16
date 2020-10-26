@@ -2,20 +2,7 @@ body {
   margin: 0;
 }
 
-#app {
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  background-color: darkgreen;
-}
 
-.game-area {
-  width: 400px;
-  height: 400px;
-  margin: auto;
-  background-color: white;
-  position: relative;
-}
 
 .player {
   display: block;
