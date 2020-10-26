@@ -50,12 +50,10 @@ class Game extends React.Component {
 
   componentDidMount() {
     // se apeleaza dupa ce sa afisat componenta pe ecran
-    document.addEventListener("keydown", (event) => {
-      this.movePlayer(event)
-    });
+    document.addEventListener("keydown", this.movePlayer);
   }
 
-  movePlayer(event) {
+  movePlayer = (event) => { // this.movePlayer = this.movePlayer.bind(this) in constructor
     // 1. Variabile cu nextTop si nextLeft
     let nextTop = this.state.top; //initializam nextTop cu valoarea lui din this.state
     let nextLeft = this.state.left;
