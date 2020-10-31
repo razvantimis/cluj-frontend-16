@@ -13,30 +13,42 @@ class PostList extends React.Component {
   constructor(props) {
     super(props);
 
-    const posts = []
-    for (let index = 0; index < this.props.numberOfPost; index++) {
-      const post = {
-        id: index,
-        title: 'post ' + index,
-        content: 'content ' + index
-      }
-      posts.push(post)
-    }
+    // const posts = []
+    // for (let index = 0; index < this.props.numberOfPost; index++) {
+    //   const post = {
+    //     id: index,
+    //     title: 'post ' + index,
+    //     content: 'content ' + index
+    //   }
+    //   posts.push(post)
+    // }
 
     this.state = {
-      posts: posts
+      posts: []
     }
+  }
+
+  componentDidMount() {
+    fetch("http://localhost:3000/posts")
+      .then((response) => {
+        return response.json()
+      })
+      .then((posts) => {
+         this.setState({
+           posts: posts
+         })
+      })
   }
 
   deletePost(postId) {
     console.log('sterge un post = ', postId)
-    // 1. Sa stergem si pe server iar daca sa sters cu succes
-   
+    // 1. Sa stergem si pe server iar daca sa sters cu succes atunci facem pasul 2
+
     // 2. Stergem postul din this.state.posts - stergere locala
     const posts = this.state.posts.filter(post => post.id !== postId);
     this.setState({
       posts: posts
-    })
+    }) // provoaca rerandarea componentei
   }
 
 
