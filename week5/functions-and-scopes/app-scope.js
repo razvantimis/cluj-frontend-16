@@ -8,19 +8,21 @@
 */
 //  3. Scope
 // parameter scope
-function hello(name, age){
+function hello(name, age) {
   console.log('hello ' + name + age)
 }
 hello('razvan', 25)
 // console.log(name) - nu merge
 // var scope
-function hello(name){
+function hello(name) {
   var age = 27;
   console.log('hello ' + name + age)
-  function test(){
+  function test() {
     // avem acces la tot ce este mai sus
     console.log(age, name, isMen)
-    var isMen = true;
+    if (true) {
+      var isMen = true;
+    }
   }
   test();
 }
@@ -29,7 +31,7 @@ console.log(age);
 
 
 var age = 27; // variabila globala
-function hello(name){
+function hello(name) {
   console.log('hello ' + name + age)
 }
 hello('razvan')
@@ -39,7 +41,7 @@ console.log(age);
 
 // exemplu 
 var a = 10;
-function setNumber(){
+function setNumber() {
   a = 8;
 }
 setNumber();
@@ -47,7 +49,7 @@ console.log(a); // 8
 
 
 var a = 10;
-function setNumber(){
+function setNumber() {
   var a;
   a = 8;
 }
@@ -61,7 +63,7 @@ console.log(a); // 10
 // console.log(a); // 10
 
 setNumber();
-function setNumber(){// Hoisting inner function
+function setNumber() {// Hoisting inner function
   console.log('in function', a)
   // a = 8;
   var a;
@@ -72,12 +74,12 @@ var a = 10;
 setNumber();
 console.log(a); // 10
 
-function setNumber(){ // Hoisting inner function
+function setNumber() { // Hoisting inner function
   console.log('in function', a)
   a = 8;
-  if(true){
-    if(true){
-       var a;
+  if (true) {
+    if (true) {
+      var a;
     }
   }
 }
@@ -87,9 +89,9 @@ var a = 10;
 setNumber();
 console.log(a); // 10
 
-function setNumber(){// Hoisting inner function
+function setNumber() {// Hoisting inner function
   console.log('in function', a)
-  if(true){
+  if (true) {
     console.log(a) // nu-l putem accesa
     let a; // are scop doar in bloc
     // doar aici merge console.log(a)
@@ -101,9 +103,9 @@ function setNumber(){// Hoisting inner function
 const a = 5;
 
 // Hoisting
-function test(){
+function test() {
   // avem acces la tot ce este mai sus
   console.log(age, name, isMen) // isMen = undefined
-  var isMen = true; 
+  var isMen = true;
   console.log(isMen) // true
 }
