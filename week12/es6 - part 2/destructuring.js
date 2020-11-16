@@ -6,14 +6,14 @@ const x = array[0]
 const y = array[1]
 
 // dupa es6
-const myPos = [30, 50];
-const [x, y] = myPos;
+const myPos = [30, 50, 200];
+const [x, y, z] = myPos;
 console.log(x)
 console.log(y)
 
 // ex2
 const array = [1, 2, 3, 4, 5, 6, 7, 8];
-const [firstElement] = array;
+const [firstElement] = array; // const firstEl = array[0]
 
 //spread
 const array = [1, 2, 3, 4, 5, 6, 7, 8];
@@ -23,13 +23,18 @@ const [firstEl, ...lastPartOfArray] = array;
 
 const user = {
   username: 'admin',
-  password: 'password',
+  password: 'password123',
   start: function () {
 
   }
 }
-const { username, start } = user;
+// user.username
+// user.password
+// user.start
+const { username, password, start } = user;
 
+console.log(username)
+console.log(password)
 start();
 
 
@@ -47,6 +52,14 @@ const person = {
 const { name: { firstName } } = person
 
 // 10.4 Destructuring Rename
+const user = {
+  username: 'admin',
+  password: 'password123',
+}
+const { username: adminUserName, password } = user;
+console.log(adminUserName)
+
+
 
 const { name: { firstName: name } } = person
 
